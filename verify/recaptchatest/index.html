@@ -4,6 +4,14 @@
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lf9xLolAAAAAECr3FtNB5Gzdc8oSWLES0mO74Vh"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6Lf9xLolAAAAAECr3FtNB5Gzdc8oSWLES0mO74Vh', {action: 'login'}).then(function(token) {
+       ...
+    });
+});
+</script>
     <form action="?" method="POST">
       <div class="g-recaptcha" data-sitekey="6Lf9xLolAAAAAECr3FtNB5Gzdc8oSWLES0mO74Vh"></div>
       <br/>

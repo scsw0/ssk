@@ -5,6 +5,14 @@
   </head>
   <body>
 <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <script>
+      function checkCaptcha() {
+        if document.getElementById("a11y-label").value == "hCaptchaチェックボックス。確認済み"{
+          location.href = "https://minakun.com/";
+        }
+      }
+    </script>
       <div class="h-captcha" data-sitekey="479e7c15-df76-41bb-ad02-724f97158cf0"></div>
+    <button onclick="chackCaptcha()">送信</button>
   </body>
 </html>

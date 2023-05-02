@@ -46,12 +46,12 @@
                         }
 
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = "チャレンジ成功！"
+                        logEl.innerHTML = '<button onclick="location.href=' + "'https://minakun.com/';" + '">進む</button>'
                       };
 
                       var onExpire = function(response) {
                         var logEl = document.querySelector(".hcaptcha-success");
-                        logEl.innerHTML = "トークンの有効期限が切れています。"
+                        logEl.innerHTML = "もう一度やり直してください"
                       };
                 </script>
 
